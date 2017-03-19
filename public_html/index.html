@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Juniper Web D</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="app.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body ng-app="Juniper" ng-controller="JuniperController">
+        <div style="text-align: center">
+            <h3><b>Juniper Web D Test</b></h3>
+        </div>
+
+        <div>
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <b>Table Name</b>
+                    </td>
+                    <td colspan="3">
+                        <b>traffic_table</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+
+                        <select name="attribute">
+                            <option ng-repeat="attribute in attributes.availableOptions" value="{{attribute.name}}">{{attribute.name}}</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="clause">
+                            <option ng-repeat="option in clause.availableOptions" value="{{option.name}}">{{option.name}}</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="values">
+                    </td>
+                    <td>
+                        <select name="operator">
+                            <option ng-repeat="option in operator.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td  colspan="4">
+                        <input type="button" value="Generate" ng-click="generateQuery()"/>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <pre><code>
+        <DIV ID="displayQuery"> 
+        </DIV>
+            </code>
+</pre>
+
+
+    </body>
+</html>
